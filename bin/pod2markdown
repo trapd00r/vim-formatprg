@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use strict;
+
+use Pod::Markdown;
+
+my $p = Pod::Markdown->new;
+$p->parse_from_filehandle( \*STDIN );
+print $p->as_markdown;
+
+
+__END__

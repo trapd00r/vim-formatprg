@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+use strict;
+
+chomp(my @t = <>);
+for(@t) {
+  if($_ =~ m/^$/) {
+    print "\n";
+    next;
+  }
+  printf("# %s\n", $_);
+}
+
+
+__END__
+
+# vim: set ts=2 et sw=2:

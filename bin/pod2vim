@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use strict;
+
+use Pod::Simple::Vim;
+
+my $p = Pod::Simple::Vim->new;
+my $pd;
+$p->output_string( \$pd );
+$p->parse_file( \*STDIN );
+print $pd;
